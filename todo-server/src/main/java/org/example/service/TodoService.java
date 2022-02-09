@@ -20,7 +20,7 @@ public class TodoService {
         todoEntity.setTitle(request.getTitle());
         todoEntity.setOrder(request.getOrder());
         todoEntity.setCompleted(request.getCompleted());
-        return this.todoRepository.save(todoEntity);;
+        return this.todoRepository.save(todoEntity);
     }
 
     public TodoEntity serachById(Long id) {
