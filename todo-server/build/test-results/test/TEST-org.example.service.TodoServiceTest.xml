@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.service.TodoServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-13T14:18:52" hostname="jaeyeongsin-ui-MacBookPro.local" time="0.529">
+  <properties/>
+  <testcase name="searchById()" classname="org.example.service.TodoServiceTest" time="0.529"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

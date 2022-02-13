@@ -23,7 +23,7 @@ public class TodoService {
         return this.todoRepository.save(todoEntity);
     }
 
-    public TodoEntity serachById(Long id) {
+    public TodoEntity searchById(Long id) {
         return this.todoRepository.findById(id)
                 .orElseThrow(() -> new ResponseStatusException((HttpStatus.NOT_FOUND)));
     }
@@ -33,7 +33,7 @@ public class TodoService {
     }
 
     public TodoEntity updateById(Long id,TodoRequest request) {
-        TodoEntity todoEntity = this.serachById(id);
+        TodoEntity todoEntity = this.searchById(id);
         if (request.getTitle() != null) {
             todoEntity.setTitle(request.getTitle());
         }

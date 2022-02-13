@@ -42,7 +42,7 @@ public class TodoController {
     @GetMapping("{id}")
     public ResponseEntity<TodoResponse> readOne(@PathVariable Long id) {
         System.out.println("READ ONE");
-        TodoEntity result = this.service.serachById(id);
+        TodoEntity result = this.service.searchById(id);
         return ResponseEntity.ok(new TodoResponse(result));
     }
 
